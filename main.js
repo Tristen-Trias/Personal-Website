@@ -981,9 +981,9 @@ PersonalComponent.ɵfac = function PersonalComponent_Factory(t) {
 PersonalComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
   type: PersonalComponent,
   selectors: [["app-personal-projects"]],
-  decls: 52,
+  decls: 47,
   vars: 0,
-  consts: [["appearance", "outlined", 1, "p-3", "m-2"], [1, "row"], [1, "col-6"], [1, "col-6", 2, "text-align", "right"], ["href", "https://github.com/Tristen-Trias/Personal-Website", "target", "_blank", "rel", "noopener noreferrer"], ["href", "https://github.com/Tristen-Trias/Sierra-Nevada-Trails-Project", "target", "_blank", "rel", "noopener noreferrer"]],
+  consts: [["appearance", "outlined", 1, "p-3", "m-2"], [1, "row"], [1, "col-6"], [1, "col-6", 2, "text-align", "right"], ["href", "https://github.com/Tristen-Trias/Personal-Website", "target", "_blank", "rel", "noopener noreferrer"]],
   template: function PersonalComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "mat-card", 0)(1, "div", 1)(2, "div", 2)(3, "h1")(4, "b");
@@ -1000,24 +1000,21 @@ PersonalComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0_
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "mat-card", 0)(20, "div", 1)(21, "div", 2)(22, "h1")(23, "b");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "Matchmaking Discord Bot");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 3)(26, "a", 5)(27, "h3")(28, "i");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "Github");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "mat-card-content")(31, "div", 1)(32, "div", 2)(33, "b");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "Relevant heading");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "ul")(36, "li");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "Bullet");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "mat-card", 0)(39, "div", 1)(40, "div", 2)(41, "h1")(42, "b");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "Amazon Purchase Bot");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "mat-card-content")(45, "div", 1)(46, "div", 2)(47, "b");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, "Relevant heading");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "mat-card-content")(26, "div", 1)(27, "div", 2)(28, "b");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "Relevant heading");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "ul")(50, "li");
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, "Bullet");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "ul")(31, "li");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Bullet");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "mat-card", 0)(34, "div", 1)(35, "div", 2)(36, "h1")(37, "b");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "Amazon Purchase Bot");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "mat-card-content")(40, "div", 1)(41, "div", 2)(42, "b");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "Relevant heading");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "ul")(45, "li");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "Bullet");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()()();
     }
   },
