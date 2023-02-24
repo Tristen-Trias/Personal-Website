@@ -1,52 +1,26 @@
 <!-- 
     This is the education page, displaying my education history and relevant coursework.
  -->
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="col">
-        <div class="row">
-            <h1><b>University of California Merced</b></h1>
-        </div>
-
-        <div class="row">
-            <div class="col" style="text-align: left;">
-                <h3><i>B.S. Computer Science & Engineering</i></h3>
-            </div>
-            <div class="col" style="text-align: right;">
-                <h3><i>August 2018 - May 2022</i></h3>
+ <div class="d-flex justify-content-center">
+    <mat-card appearance="outlined" class="p-3 m-2">
+        <div class="col">
+            <div class="row" style="text-align: center;">
+                <h1><b>Education</b></h1>
             </div>
         </div>
-    </div>
+    </mat-card>
+</div>
 
-    <mat-card-content>
-        <div style="text-align: right;">
-            <h3><i>Merced, CA</i></h3>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <b>Relevant Coursework:</b>
-                <ul>
-                    <li>Data Structures</li>
-                    <li>Operating Systems</li>
-                    <li>Database Systems</li>
-                    <li>Software Engineering</li>
-                    <li>Computer Architecture</li>
-                    <li>Object Oriented Programming</li>
-                    <li>Algorithm Design and Analysis</li>
-                    <li>Intro to Artificial Intelligence</li>
-                    <li>Intro to Digital Image Process</li>
-                </ul>
-            </div>
-
-            <div class="col-6">
-                <b>Other Coursework:</b>
-                <ul>
-                    <li>Circuit Theory</li>
-                    <li>Making Electronic Music</li>
-                    <li>Engineering Economic Analysis</li>
-                    <li>Spatial Analysis and Modeling</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
+<div *ngFor = "let card of cards">
+    <app-card
+        [header]="card.header"
+        [headerSubtitle]="card.headerSubtitle"
+        [subtitleLink]="card.subtitleLink"
+        [lSubtitle]="card.lSubtitle"
+        [rSubtitle]="card.rSubtitle"
+        [listHeader]="card.listHeader"
+        [list2Header]="card.list2Header"
+        [body]="card.body"
+        [body2]="card.body2">
+    </app-card>
+</div>

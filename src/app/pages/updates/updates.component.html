@@ -1,7 +1,5 @@
 <!-- 
-    Don't know how to create an entire backend just yet, so each card will be hardcoded in.
-    Eventually, I will create a backend that will allow me to add new cards to the page and add 
-    input fields to the cards so I don't have to hardcode everything.
+    TODO: Add everything to json files and loop through them
 -->
 
 <div class="d-flex justify-content-center">
@@ -14,40 +12,10 @@
     </mat-card>
 </div>
 
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="col">
-        <div class="row">
-            <h1><b>2/21</b></h1>
-        </div>
-    </div>
+<div *ngFor="let card of cards">
+    <app-card
+        [header]="card.header"
+        [body]="card.body">
+    </app-card>
+</div>
 
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <ul>
-                    <li>Added updates page</li>
-                    <li>Updated to Angular 15</li>
-                    <li>Added small animations to buttons on home page</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="col">
-        <div class="row">
-            <h1><b>2/22</b></h1>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <ul>
-                    <li>Added projects to projects page</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>

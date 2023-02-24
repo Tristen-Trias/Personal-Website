@@ -10,30 +10,11 @@
 <mat-sidenav-container>
     <mat-sidenav #sidenav mode="push">
         <mat-nav-list>
-            <a mat-list-item routerLink="/home" routerLinkActive="active" (click)="sidenav.toggle()">
-                <mat-icon matListIcon>home</mat-icon>
-                Home</a>
-            <a mat-list-item routerLink="/about" routerLinkActive="active" (click)="sidenav.toggle()">
-                <mat-icon matListIcon>perm_identity</mat-icon>
-                About Me</a>
-            <a mat-list-item routerLink="/projects" routerLinkActive="active" (click)="sidenav.toggle()">
-                <mat-icon matListIcon>assignment</mat-icon>
-                Projects</a>
-            <a mat-list-item routerLink="/education" routerLinkActive="active" (click)="sidenav.toggle()">
-                <mat-icon matListIcon>school</mat-icon>
-                Education</a>
-            <a mat-list-item routerLink="/history" routerLinkActive="active" (click)="sidenav.toggle()">
-                <mat-icon matListIcon>history</mat-icon>
-                Work History</a>
-            <a mat-list-item routerLink="/hobbies" routerLinkActive="active" (click)="sidenav.toggle()">
-                <mat-icon matListIcon>games</mat-icon>
-                Hobbies</a>
-            <a mat-list-item routerLink="/contact" routerLinkActive="active" (click)="sidenav.toggle()">
-                <mat-icon matListIcon>contact_mail</mat-icon>
-                Contact</a>
-            <a mat-list-item routerLink="/updates" routerLinkActive="active" (click)="sidenav.toggle()">
-                <mat-icon matListIcon>update</mat-icon>
-                Updates</a>
+            <div *ngFor="let i of list">
+                <a mat-list-item routerLink={{i.link}} routerLinkActive="active" (click)="sidenav.toggle()">
+                    <i class={{i.icon}}></i>
+                    {{i.item}}</a>
+            </div>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>

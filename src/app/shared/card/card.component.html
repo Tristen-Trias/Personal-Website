@@ -1,10 +1,58 @@
-<mat-card appearance="outlined">
-    <mat-card-header>
-        <mat-card-title>
-            <h1>{{title}}</h1>
-        </mat-card-title>
-    </mat-card-header>
+<mat-card appearance="outlined" class="p-3 m-2">
+    <div class="row">
+        <div class="col-6">
+            <h1><b>{{this.header}}</b></h1>
+        </div>
+
+        <!-- If there is a subtitle link, add the link -->
+        <div *ngIf="subtitleLink" class="col-6" style="text-align: right;">
+            <a href={{this.subtitleLink}} target="_blank"
+                rel="noopener noreferrer">
+                <h3><i>{{this.headerSubtitle}}</i></h3>
+            </a>
+        </div>
+
+        <!-- Otherwise just add the text -->
+        <div *ngIf="!subtitleLink && headerSubtitle" class="col-6" style="text-align: right;">
+            <h3><i>{{this.headerSubtitle}}</i></h3>
+        </div>
+    </div>
+
+    <div *ngIf="lSubtitle || rSubtitle" class="row">
+        <div *ngIf="lSubtitle" class="col" style="text-align: left;">
+            <h3><i>{{this.lSubtitle}}</i></h3>
+        </div>
+        <div *ngIf="rSubtitle" class="col" style="text-align: right;">
+            <h3><i>{{this.rSubtitle}}</i></h3>
+        </div>
+    </div>
+
     <mat-card-content>
-        <p>{{content}}</p>
+        
+        <div *ngIf="body2" class="row">
+            <div class="col-6">
+                <b *ngIf="listHeader">{{this.listHeader}}</b>
+                <ul>
+                    <li *ngFor="let i of this.body">{{i}}</li>
+                </ul>
+            </div>
+
+            <div class="col-6">
+                <b *nfIf="list2header">{{this.list2Header}}</b>
+                <ul>
+                    <li *ngFor="let i of this.body2">{{i}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div *ngIf="!body2" class="row">
+            <b *ngIf="listHeader">{{this.listHeader}}</b>
+            <div class="col">
+                <ul>
+                    <li *ngFor="let i of this.body">{{i}}</li>
+                </ul>
+            </div>
+        </div>
+        
     </mat-card-content>
 </mat-card>

@@ -1,77 +1,25 @@
 <!-- 
     This is the history page of the website to display my work experience.
+-->
+<div class="d-flex justify-content-center">
+    <mat-card appearance="outlined" class="p-3 m-2">
+        <div class="col">
+            <div class="row" style="text-align: center;">
+                <h1><b>Work History</b></h1>
+            </div>
+        </div>
+    </mat-card>
+</div>
 
-    TODO: Create a component for each work experience and use *ngFor to display them.
-            Cannot do TODO until backend is created.
- -->
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>E&J Gallo Winery</b></h1>
-        </div>
-        <div class="col-6" style="text-align: right;">
-            <h3><i>Modesto, CA</i></h3>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col" style="text-align: left;">
-            <h3><i>IT Program Analyst Intern</i></h3>
-        </div>
-        <div class="col" style="text-align: right;">
-            <h3><i>June 2022 - September 2022</i></h3>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <b>Responsibilities:</b>
-        <ul>
-            <li>Updated and redesigned company applications to comply with
-                industry standards using Angular 13</li>
-            <li>Strategized and implemented new features in collaboration with
-                upper management</li>
-            <li>Analyzed internal backend Spring Boot Java implementations
-                and databases and applied enhancements to solve business needs
-                that improved search times by 15%</li>
-            <li>Diagnosed system failure reported by end users through
-                identification of system bugs and implementation of permanent
-                solutions</li>
-        </ul>
-    </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>South Coast Industrial Door</b></h1>
-        </div>
-        <div class="col-6" style="text-align: right;">
-            <h3><i>Corona, CA</i></h3>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col" style="text-align: left;">
-            <h3><i>Tech Support</i></h3>
-        </div>
-        <div class="col" style="text-align: right;">
-            <h3><i>June 2020 - December 2020</i></h3>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <b>Responsibilities:</b>
-        <ul>
-            <li>Configured hardware and software on custom built computers
-                for new employees</li>
-            <li>Identified, evaluated and solved user reported system failures
-                through problem solving skills</li>
-            <li>Installed and maintained wireless network to improve wireless
-                speeds and company uptime by 20%</li>
-            <li>Rolled out antivirus software updates to employee workstations
-                and applied server patches to thwart threats from penetrating
-                networks.</li>
-        </ul>
-    </mat-card-content>
-</mat-card>
+<div *ngFor="let card of cards">
+    <app-card
+        [header]="card.header"
+        [headerSubtitle]="card.headerSubtitle"
+        [subtitleLink]="card.subtitleLink"
+        [lSubtitle]="card.lSubtitle"
+        [rSubtitle]="card.rSubtitle"
+        [listHeader]="card.listHeader"
+        [body]="card.body"
+        >
+    </app-card>
+</div>

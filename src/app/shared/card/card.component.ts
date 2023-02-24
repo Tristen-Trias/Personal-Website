@@ -9,10 +9,15 @@ export class CardComponent implements OnInit {
 
   constructor() { }
 
-  @Input () title?: string;
-  @Input () content?: string;
-  @Input () icon?: string;
-  @Input () size?: number;
+  @Input () header?: string;
+  @Input () headerSubtitle?: string;
+  @Input () subtitleLink?: string;
+  @Input () lSubtitle?: string;
+  @Input () rSubtitle?: string;
+  @Input () listHeader?: string;
+  @Input () list2Header?: string;
+  @Input () body?: string[];
+  @Input () body2?: string[];
 
   ngOnInit(): void {
   }
