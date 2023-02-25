@@ -1,75 +1,12 @@
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>Custom Keyboards</b></h1>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>Soldering</b>
-                <ul>
-                    <li>Bullet</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>PhobGCC</b></h1>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>Microcontrollers</b>
-                <ul>
-                    <li>Bullet</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>Custom Personal Computer</b></h1>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>Relevant heading</b>
-                <ul>
-                    <li>Bullet</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>Video Editing</b></h1>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>Vegas Pro 14</b>
-                <ul>
-                    <li>Bullet</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
+<div *ngFor="let card of cards">
+    <app-card
+        [header]="card.header"
+        [headerSubtitle]="card.headerSubtitle"
+        [subtitleLink]="card.subtitleLink"
+        [lSubtitle]="card.lSubtitle"
+        [rSubtitle]="card.rSubtitle"
+        [listHeader]="card.listHeader"
+        [body]="card.body"
+        >
+    </app-card>
+</div>

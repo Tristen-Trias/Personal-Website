@@ -1,93 +1,12 @@
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>Single Cycle MIPS Processor</b></h1>
-        </div>
-        <div class="col-6" style="text-align: right;">
-            <a href="https://github.com/Tristen-Trias/CSE-140-Project" target="_blank"
-                rel="noopener noreferrer">
-                <h3><i>Github</i></h3>
-            </a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col" style="text-align: left;">
-            <h3><i>CSE 140 - Computer Architecture</i></h3>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>C++</b>
-                <ul>
-                    <li>TODO: ADD IMAGES TO EVERYTHING</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>Aim Training Game</b></h1>
-        </div>
-        <div class="col-6" style="text-align: right;">
-            <a href="https://github.com/Tristen-Trias/ClickTrainer" target="_blank"
-                rel="noopener noreferrer">
-                <h3><i>Github</i></h3>
-            </a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col" style="text-align: left;">
-            <h3><i>CSE 165 - Object Oriented Programming</i></h3>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>Qt, C++</b>
-                <ul>
-                    <li>Bullet</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined" class="p-3 m-2">
-
-    <div class="row">
-        <div class="col-6">
-            <h1><b>Sierra Nevada Trails App</b></h1>
-        </div>
-        <div class="col-6" style="text-align: right;">
-            <a href="https://github.com/Tristen-Trias/Sierra-Nevada-Trails-Project" target="_blank"
-                rel="noopener noreferrer">
-                <h3><i>Github</i></h3>
-            </a>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col" style="text-align: left;">
-            <h3><i>CSE 111 - Database Systems</i></h3>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>Android Studio, Kotlin, SQL</b>
-                <ul>
-                    <li>Bullet</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
+<div *ngFor="let card of cards">
+    <app-card
+        [header]="card.header"
+        [headerSubtitle]="card.headerSubtitle"
+        [subtitleLink]="card.subtitleLink"
+        [lSubtitle]="card.lSubtitle"
+        [rSubtitle]="card.rSubtitle"
+        [listHeader]="card.listHeader"
+        [body]="card.body"
+        >
+    </app-card>
+</div>

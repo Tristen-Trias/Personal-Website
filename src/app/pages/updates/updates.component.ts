@@ -30,6 +30,12 @@ export class UpdatesComponent implements OnInit {
         "Condensed cards into one component",
         "Modified pages to adapt to new condensed cards"
       ]
+    },
+    {
+      header: "2/24",
+      body: [
+        "Modified Projects page",
+      ]
     }
   ];
 

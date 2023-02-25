@@ -1,3 +1,11 @@
 .mat-sidenav {
     width: 12.5vw;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 2rem;
+}

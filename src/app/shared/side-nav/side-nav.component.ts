@@ -14,7 +14,7 @@ export class SideNavComponent implements OnInit {
     new List('About', 'fa-solid fa-circle-question', '/about'),
     new List('Projects', 'fa-solid fa-diagram-project', '/projects'),
     new List('Education', 'fa-solid fa-user-graduate', '/education'),
-    new List('History', 'fa-solid fa-briefcase', '/history'),
+    new List('Work Experience', 'fa-solid fa-briefcase', '/history'),
     new List('Hobbies', 'fa-solid fa-gamepad', '/hobbies'),
     new List('Contact', 'fa-solid fa-address-card', '/contact'),
     new List('Updates', 'fa-solid fa-circle-up', '/updates')

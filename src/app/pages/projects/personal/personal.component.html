@@ -1,82 +1,12 @@
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>Personal Website</b></h1>
-        </div>
-        <div class="col-6" style="text-align: right;">
-            <a href="https://github.com/Tristen-Trias/Personal-Website" target="_blank"
-                rel="noopener noreferrer">
-                <h3><i>Github</i></h3>
-            </a>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>Angular 15, Bootstrap, HTML, CSS, Typescript</b>
-                <ul>
-                    <li>Bullet</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>Matchmaking Discord Bot</b></h1>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>Python, SQL, Discord API</b>
-                <ul>
-                    <li>Bullet</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>Amazon Purchase Bot</b></h1>
-        </div>
-
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>Python</b>
-                <ul>
-                    <li>Bullet</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
-
-<mat-card appearance="outlined" class="p-3 m-2">
-    <div class="row">
-        <div class="col-6">
-            <h1><b>Untitled Unity Game</b></h1>
-        </div>
-    </div>
-
-    <mat-card-content>
-        <div class="row">
-            <div class="col-6">
-                <b>Unity, C#</b>
-                <ul>
-                    <li>Bullet</li>
-                </ul>
-            </div>
-        </div>
-    </mat-card-content>
-</mat-card>
+<div *ngFor="let card of cards">
+    <app-card
+        [header]="card.header"
+        [headerSubtitle]="card.headerSubtitle"
+        [subtitleLink]="card.subtitleLink"
+        [lSubtitle]="card.lSubtitle"
+        [rSubtitle]="card.rSubtitle"
+        [listHeader]="card.listHeader"
+        [body]="card.body"
+        >
+    </app-card>
+</div>
