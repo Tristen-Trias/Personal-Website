@@ -36,7 +36,13 @@ export class UpdatesComponent implements OnInit {
       body: [
         "Modified Projects page",
       ]
-    }
+    },
+    {
+      header: "2/27",
+      body: [
+        "Small improvements",
+      ]
+    },
   ];
 
   constructor() { }
