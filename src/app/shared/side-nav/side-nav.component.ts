@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core'
 import { List } from 'src/app/models/list';
 
 @Component({
@@ -9,6 +8,7 @@ import { List } from 'src/app/models/list';
 })
 export class SideNavComponent implements OnInit {
 
+  title?: String;
   list = [
     new List('Home', 'fa-solid fa-house', '/home'),
     new List('About', 'fa-solid fa-circle-question', '/about'),
@@ -20,15 +20,15 @@ export class SideNavComponent implements OnInit {
     new List('Updates', 'fa-solid fa-circle-up', '/updates')
   ];
 
-  constructor(private router: Router ) {
+  constructor() {
     
   }
 
   ngOnChanges(): void {
-    
   }
 
   ngOnInit(): void {
+    
   }
 
 }

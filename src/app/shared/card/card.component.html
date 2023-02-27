@@ -38,7 +38,7 @@
             </div>
 
             <div class="col-6">
-                <b *nfIf="list2header">{{this.list2Header}}</b>
+                <b *ngIf="list2Header">{{this.list2Header}}</b>
                 <ul>
                     <li *ngFor="let i of this.body2">{{i}}</li>
                 </ul>
