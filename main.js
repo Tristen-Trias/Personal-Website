@@ -828,23 +828,34 @@ class ClassComponent {
       header: 'Single Cycle MIPS Processor',
       headerSubtitle: 'Github',
       subtitleLink: 'https://github.com/Tristen-Trias/CSE-140-Project',
-      lSubtitle: 'CSE 140 - Computer Architecture',
+      lSubtitle: 'Spring 2022',
+      rSubtitle: 'CSE 140 - Computer Architecture',
       listHeader: 'C++',
-      body: ['bullet']
-    }, {
-      header: 'Aim Training Game',
-      headerSubtitle: 'Github',
-      subtitleLink: 'https://github.com/Tristen-Trias/ClickTrainer',
-      lSubtitle: 'CSE 165 - Object Oriented Programming',
-      listHeader: 'Qt, C++',
-      body: ['bullet']
+      body: ['Created to simulate a single cycle MIPS processor', 'Processor takes in MIPS instructions from text file, performs calculations, and stores value in memory', 'Executes ten different functions taken from designs given from class lectures']
     }, {
       header: 'Sierra Nevada Trails App',
       headerSubtitle: 'Github',
       subtitleLink: 'https://github.com/Tristen-Trias/Sierra-Nevada-Trails-Project',
-      lSubtitle: 'CSE 111 - Database Systems',
+      lSubtitle: 'Spring 2022',
+      rSubtitle: 'CSE 111 - Database Systems',
       listHeader: 'Android Studio, Kotlin, SQLite3',
-      body: ['bullet']
+      body: ['Used Android Studio, Kotlin and SQL for Databases class project', 'Took in data for hiking trails in Sierra Nevada Mountains and displayed information for user to see', 'Users can sort through data and find trails that match personal preferences']
+    }, {
+      header: 'Aim Training Game',
+      headerSubtitle: 'Github',
+      subtitleLink: 'https://github.com/Tristen-Trias/ClickTrainer',
+      lSubtitle: 'Spring 2021',
+      rSubtitle: 'CSE 165 - Object Oriented Programming',
+      listHeader: 'Qt, C++',
+      body: ['Designed and Collaborated with other students using Github in order to create project using the Qt Framework and C++', 'Users play a variety of small games on their computer screen in order to improve mouse accuracy for other games']
+    }, {
+      header: 'Text Based Adventure RPG',
+      headerSubtitle: 'Github',
+      subtitleLink: 'https://github.com/Tristen-Trias/AP-CS--Final',
+      lSubtitle: 'Spring 2018',
+      rSubtitle: 'AP Computer Science',
+      listHeader: 'Java',
+      body: ['Created a text based adventure game using Java', 'Users can choose from a variety of different classes and fight monsters in order to level up', 'Users can also buy items from a shop and use them to fight monsters']
     }];
   }
 }
@@ -903,20 +914,26 @@ class OtherComponent {
   constructor() {
     this.cards = [{
       header: 'Custom Keyboards',
-      listHeader: 'C, Arduino, QMK, Soldering',
-      body: ['bullet']
+      listHeader: 'C, QMK, Soldering',
+      body: ['Created custom keyboards using community sourced parts and guides', 'Programmed custom layouts and layers using QMK', 'Soldered mechanical key switches onto custom PCB\'s']
     }, {
       header: 'PhobGCC',
+      headerSubtitle: 'Source',
+      lSubtitle: 'July 2022',
+      subtitleLink: 'https://github.com/PhobGCC/PhobGCC-SW',
       listHeader: 'Arduino, Soldering',
-      body: ['bullet']
+      body: ['Created and programmed fully customizable gamecube controllers using open source hardware and code using Arduino', 'Soldered buttons and stick boxes onto custom PCB\'s', 'Attached hall sensors and neodymium magnets onto stick boxes to transform physical inputs to in game actions']
     }, {
       header: 'Custom Personal Computer',
+      headerSubtitle: 'Parts List',
+      lSubtitle: 'September 2020',
+      subtitleLink: 'https://pcpartpicker.com/list/Bzzw2V',
       listHeader: 'Relevant Heading',
-      body: ['bullet']
+      body: ['Built a custom personal computer using parts from Newegg', 'Installed and dual booted Windows 10 and Ubuntu 20.04', 'Troubleshooted and fixed issues with hardware and software']
     }, {
       header: 'Video Editing',
       listHeader: 'Vegas Pro 14',
-      body: ['bullet']
+      body: ['Created and edited videos for personal use', 'Rendered videos in various formats for different uses']
     }];
   }
 }
@@ -976,21 +993,25 @@ class PersonalComponent {
     this.cards = [{
       header: 'Personal Website',
       headerSubtitle: 'Github',
+      lSubtitle: 'February 2023 - Present',
       subtitleLink: 'https://github.com/Tristen-Trias/Personal-Website',
       listHeader: 'Angular 15, Bootstrap, HTML, CSS, Typescript',
-      body: ['bullet']
-    }, {
-      header: 'Matchmaking Discord App',
-      listHeader: 'Python, SQL, Discord API',
-      body: ['bullet']
-    }, {
-      header: 'Amazon Purchase Bot',
-      listHeader: 'Python',
-      body: ['bullet']
+      body: ['Designed and personalized website in order to display personal information', 'Developed using Angular 15, Angular Material, and Bootstrap 5 along with Typescript, CSS, and HTML']
     }, {
       header: 'Untitled Unity Game',
       listHeader: 'Unity, C#',
-      body: ['bullet']
+      lSubtitle: 'January 2023',
+      body: ['Developed a 2D platformer game using Unity and C#', 'Created a character controller that allows the player to move and jump', 'Implemented collision detection to allow the player to interact with the environment']
+    }, {
+      header: 'Matchmaking Discord App',
+      listHeader: 'Python, SQL, Discord API',
+      lSubtitle: 'February 2022',
+      body: ['Designed a chat room bot in order to take in user commands from Discord server containing multiple users', 'Incorporated Discord API to track and display specific message or user information', 'Takes information from game API and balances teams based on each player\'s skill level']
+    }, {
+      header: 'Amazon Purchase Bot',
+      listHeader: 'Python',
+      lSubtitle: 'September 2020',
+      body: ['Created a bot that automatically purchases items from Amazon', 'Developed using Python in order to actively refresh the page and purchase the item when it is in stock', 'Utilized Python\'s smtplib to automatically send an email to the user when item is purchased']
     }];
   }
 }
@@ -1058,7 +1079,7 @@ ProjectsComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_3_
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](6, "Projects");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()()()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](7, "mat-card", 4)(8, "mat-card-content")(9, "p");
-      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](10, " I have worked on a variety of projects, both personal and for school. Class Projects and Personal Projects are both computer science related, while Other Projects are not. Each project has a description, a link to the project, and a link to the source code if available. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](10, " I have worked on a variety of projects, both personal and for school. Class Projects and Personal Projects are both computer science related, while Other Projects are not. Each project has a description, a link to the project, and a link to the relevant information if available. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](11, "mat-tab-group", 5)(12, "mat-tab", 6);
       _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](13, "app-class-projects");
@@ -1124,6 +1145,9 @@ class UpdatesComponent {
     }, {
       header: "2/27",
       body: ["Small improvements"]
+    }, {
+      header: "3/1",
+      body: ["Updated project page information"]
     }];
   }
   ngOnInit() {}
@@ -1631,7 +1655,7 @@ SideNavComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__
   selectors: [["app-side-nav"]],
   features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]],
   decls: 17,
-  vars: 2,
+  vars: 1,
   consts: [["color", "primary"], ["mat-icon-button", "", 3, "click"], ["mode", "push"], ["sidenav", ""], [4, "ngFor", "ngForOf"], [2, "height", "100vh"], [1, "d-flex", "justify-content-center"], [1, "col-6", "p-2"], ["mat-list-item", "", "routerLinkActive", "active", 3, "routerLink", "click"]],
   template: function SideNavComponent_Template(rf, ctx) {
     if (rf & 1) {
@@ -1646,7 +1670,7 @@ SideNavComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, "menu");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "span");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6, "Tristen Trias");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "mat-sidenav-container")(8, "mat-sidenav", 2, 3)(10, "mat-nav-list");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](11, SideNavComponent_div_11_Template, 4, 5, "div", 4);
@@ -1656,9 +1680,7 @@ SideNavComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()()()();
     }
     if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.title);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](11);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.list);
     }
   },
