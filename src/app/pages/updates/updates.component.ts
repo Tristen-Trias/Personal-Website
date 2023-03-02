@@ -43,6 +43,12 @@ export class UpdatesComponent implements OnInit {
         "Small improvements",
       ]
     },
+    {
+      header: "3/1",
+      body: [
+        "Updated project page information",
+      ]
+    },
   ];
 
   constructor() { }
