@@ -41,7 +41,7 @@ export class HistoryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    
   }
 
   addCard(): void {
