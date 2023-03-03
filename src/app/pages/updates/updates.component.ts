@@ -49,6 +49,12 @@ export class UpdatesComponent implements OnInit {
         "Updated project page information",
       ]
     },
+    {
+      header: "3/2",
+      body: [
+        "Started moving information to json files",
+      ]
+    },
   ];
 
   constructor() { }
