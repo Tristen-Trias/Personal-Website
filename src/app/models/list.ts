@@ -1,7 +1,6 @@
-export class List {
-    constructor (
-        public item: string,
-        public icon: string,
-        public link: string
-    ) {}
+export interface List {
+    item?: string,
+    icon?: string,
+    link?: string
+
 }

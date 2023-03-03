@@ -1,0 +1,34 @@
+{
+    "card": [
+        {
+            "header": "Card header",
+            "headerSubtitle": "Card header subtitle",
+            "subtitleLink": "https://www.google.com",
+            "lSubtitle": "Left subtitle",
+            "rSubtitle": "Right subtitle",
+            "listHeader": "List header",
+            "list2Header": "List 2 header",
+            "body": [
+                "Body text"
+            ],
+            "body2": [
+                "Body 2 text"
+            ]
+        },
+        {
+            "header": "Card header2",
+            "headerSubtitle": "Card header subtitle2",
+            "subtitleLink": "https://www.google.com",
+            "lSubtitle": "Left subtitle2",
+            "rSubtitle": "Right subtitle2",
+            "listHeader": "List header2",
+            "list2Header": "List 2 header2",
+            "body": [
+                "Body text2"
+            ],
+            "body2": [
+                "Body 2 text2"
+            ]
+        }
+    ]
+}

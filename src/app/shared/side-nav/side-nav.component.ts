@@ -9,15 +9,52 @@ import { List } from 'src/app/models/list';
 export class SideNavComponent implements OnInit {
 
   title?: String;
-  list = [
-    new List('Home', 'fa-solid fa-house', '/home'),
-    new List('About', 'fa-solid fa-circle-question', '/about'),
-    new List('Projects', 'fa-solid fa-diagram-project', '/projects'),
-    new List('Education', 'fa-solid fa-user-graduate', '/education'),
-    new List('Work Experience', 'fa-solid fa-briefcase', '/history'),
-    new List('Hobbies', 'fa-solid fa-gamepad', '/hobbies'),
-    new List('Contact', 'fa-solid fa-address-card', '/contact'),
-    new List('Updates', 'fa-solid fa-circle-up', '/updates')
+
+  //TODO: Add a way to dynamically add items to the list
+  //TODO: Add a way to dynamically change the title
+  //TODO: Change list to interface instead of class
+  
+  list: List[] = [
+    {
+      item: 'Home', 
+      icon: 'fa-solid fa-house', 
+      link: '/home'
+    },
+    {
+      item: 'About', 
+      icon: 'fa-solid fa-circle-question', 
+      link: '/about'
+    },
+    {
+      item: 'Projects', 
+      icon: 'fa-solid fa-diagram-project', 
+      link: '/projects'
+    },
+    {
+      item: 'Education', 
+      icon: 'fa-solid fa-user-graduate', 
+      link: '/education'
+    },
+    {
+      item: 'Work Experience', 
+      icon: 'fa-solid fa-briefcase', 
+      link: '/history'
+    },
+    {
+      item: 'Hobbies', 
+      icon: 'fa-solid fa-gamepad', 
+      link: '/hobbies'
+    },
+    {
+      item: 'Contact', 
+      icon: 'fa-solid fa-address-card', 
+      link: '/contact'
+    },
+    {
+      item: 'Updates', 
+      icon: 'fa-solid fa-circle-up', 
+      link: '/updates'
+    },
   ];
 
   constructor() {

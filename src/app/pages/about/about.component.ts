@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { cardInfo } from 'src/app/models/cardInfo';
 
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -9,26 +12,25 @@ import { cardInfo } from 'src/app/models/cardInfo';
 export class AboutComponent implements OnInit {
 
   //TODO: create json files for everything
+  private _jsonURL = 'assets/data/test.json';
 
-  cards: cardInfo[] = [
-    {
-      header: "About",
-      headerSubtitle: "What is this site?",
-      subtitleLink: "link",
-      lSubtitle: "Left subtitle",
-      rSubtitle: "Right subtitle",
-      listHeader: "List header",
-      body: [
-        "Body1",
-        "Body2",
-        "Body3",
-      ]
-    },
-  ];
+  cards?: cardInfo[];
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+    this.fillCards();
+  }
 
   ngOnInit(): void {
+  }
+
+  fillCards(): void {
+    this.getJSON().subscribe(data => {
+      this.cards = data.card;
+    });
+  }
+
+  getJSON(): Observable<any> {
+    return this.http.get(this._jsonURL);
   }
 
 }
