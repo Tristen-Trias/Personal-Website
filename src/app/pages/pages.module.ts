@@ -4,7 +4,7 @@ import { AppMaterialModule } from '../app-material-module';
 import { AppSharedModule } from '../shared/shared.module';
 
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent, ModalComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { EducationComponent } from './education/education.component';
 import { HistoryComponent } from './history/history.component';
@@ -28,6 +28,8 @@ import { OtherComponent } from './projects/other/other.component';
     PersonalComponent,
     ClassComponent,
     OtherComponent,
+    ModalComponent
+    
   ],
   imports: [
     CommonModule,
@@ -42,6 +44,9 @@ import { OtherComponent } from './projects/other/other.component';
     HistoryComponent,
     HobbiesComponent,
     ContactComponent,
+  ],
+  entryComponents: [
+    ModalComponent
   ]
 })
 export class PagesModule { }

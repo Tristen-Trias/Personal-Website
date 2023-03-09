@@ -1,18 +1,10 @@
 {
     "card": [
         {
-            "header": "Card header",
-            "headerSubtitle": "Card header subtitle",
-            "subtitleLink": "https://www.google.com",
-            "lSubtitle": "Left subtitle",
-            "rSubtitle": "Right subtitle",
-            "listHeader": "List header",
-            "list2Header": "List 2 header",
+            "header": "About me",
             "body": [
-                "Body text"
-            ],
-            "body2": [
-                "Body 2 text"
+                "For now, this page is sort of just a test page for me to try adding new features to the site.",
+                "Will update this in the future once I figure out how I want to lay out the site."
             ]
         },
         {

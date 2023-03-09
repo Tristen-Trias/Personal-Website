@@ -1,0 +1,47 @@
+<div class="col m-2 p-2">
+    <div class="row">
+        <mat-form-field class="col-6">
+            <mat-label>Header</mat-label>
+            <input matInput (input)="header">
+        </mat-form-field>
+        <mat-form-field class="col-6">
+            <mat-label>Header Subtitle</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <!-- spacer -->
+            <!-- TODO: figure out a different way to do spacers -->
+        </div>
+        <mat-form-field class="col-6">
+            <mat-label>Subtitle Link</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field class="col-6">
+            <mat-label>Left Subtitle</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field class="col-6">
+            <mat-label>Right Subtitle</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field class="col-12">
+            <mat-label>List Header</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field class="col-12">
+            <mat-label>Body</mat-label>
+            <textarea matInput></textarea>
+        </mat-form-field>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button (click)="onNoClick()" mat-raised-button color="primary">Add Card</button>
+    </div>
+</div>

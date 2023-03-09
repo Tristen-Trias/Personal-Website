@@ -55,6 +55,12 @@ export class UpdatesComponent implements OnInit {
         "Started moving information to json files",
       ]
     },
+    {
+      header: "3/8",
+      body: [
+        "Testing out modals in order to add new cards to the page",
+      ]
+    }
   ];
 
   constructor() { }

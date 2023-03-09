@@ -10,6 +10,8 @@ import { PagesModule } from './pages/pages.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 
+import { ModalComponent } from './pages/about/about.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ModalComponent
+  ]
 })
 export class AppModule { }
