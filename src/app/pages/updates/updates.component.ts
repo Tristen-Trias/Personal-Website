@@ -60,6 +60,13 @@ export class UpdatesComponent implements OnInit {
       body: [
         "Testing out modals in order to add new cards to the page",
       ]
+    },
+    {
+      header: "3/9",
+      body: [
+        "Linked modal to create card",
+        "TODO: create a backend to store information",
+      ]
     }
   ];
 

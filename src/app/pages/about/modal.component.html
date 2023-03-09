@@ -1,12 +1,12 @@
 <div class="col m-2 p-2">
     <div class="row">
-        <mat-form-field class="col-6">
+        <mat-form-field class="col-6" appearance="outline">
             <mat-label>Header</mat-label>
-            <input matInput (input)="header">
+            <input matInput [(ngModel)]="header">
         </mat-form-field>
-        <mat-form-field class="col-6">
+        <mat-form-field class="col-6" appearance="outline">
             <mat-label>Header Subtitle</mat-label>
-            <input matInput>
+            <input matInput [(ngModel)]="headerSubtitle">
         </mat-form-field>
     </div>
     <div class="row">
@@ -14,31 +14,31 @@
             <!-- spacer -->
             <!-- TODO: figure out a different way to do spacers -->
         </div>
-        <mat-form-field class="col-6">
+        <mat-form-field class="col-6" appearance="outline">
             <mat-label>Subtitle Link</mat-label>
-            <input matInput>
+            <input matInput [(ngModel)]="subtitleLink">
         </mat-form-field>
     </div>
     <div class="row">
-        <mat-form-field class="col-6">
+        <mat-form-field class="col-6" appearance="outline">
             <mat-label>Left Subtitle</mat-label>
-            <input matInput>
+            <input matInput [(ngModel)]="lSubtitle">
         </mat-form-field>
-        <mat-form-field class="col-6">
+        <mat-form-field class="col-6" appearance="outline">
             <mat-label>Right Subtitle</mat-label>
-            <input matInput>
+            <input matInput [(ngModel)]="rSubtitle">
         </mat-form-field>
     </div>
     <div class="row">
-        <mat-form-field class="col-12">
+        <mat-form-field class="col-12" appearance="outline">
             <mat-label>List Header</mat-label>
-            <input matInput>
+            <input matInput [(ngModel)]="listHeader">
         </mat-form-field>
     </div>
     <div class="row">
-        <mat-form-field class="col-12">
+        <mat-form-field class="col-12" appearance="outline">
             <mat-label>Body</mat-label>
-            <textarea matInput></textarea>
+            <textarea matInput [(ngModel)]="body"></textarea>
         </mat-form-field>
     </div>
     <div class="d-flex justify-content-center">

@@ -41,6 +41,7 @@ export class AboutComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ModalComponent, {
+      width: '750px',
       data: {name: "test", animal: "test"}
     });
 
@@ -59,6 +60,16 @@ export class AboutComponent implements OnInit {
 export class ModalComponent { 
 
   header?: string;
+  headerSubtitle?: string;
+  subtitleLink?: string;
+  lSubtitle?: string;
+  rSubtitle?: string;
+  listHeader?: string;
+  list2Header?: string;
+  body?: string[];
+  body2?: string[];
+
+  card?: cardInfo;
 
   constructor(
     public dialogRef: MatDialogRef<ModalComponent>,
@@ -66,7 +77,18 @@ export class ModalComponent {
   ) { }
 
   onNoClick(): void {
-    console.log(this.header);
+    this.card = {
+      header: this.header,
+      headerSubtitle: this.headerSubtitle,
+      subtitleLink: this.subtitleLink,
+      lSubtitle: this.lSubtitle,
+      rSubtitle: this.rSubtitle,
+      listHeader: this.listHeader,
+      body: this.body,
+    }
+    console.log(this.card)
     this.dialogRef.close();
+
+    //TODO: create a working backend
   }
 }

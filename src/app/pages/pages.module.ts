@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { AppMaterialModule } from '../app-material-module';
 import { AppSharedModule } from '../shared/shared.module';
 
@@ -28,13 +29,13 @@ import { OtherComponent } from './projects/other/other.component';
     PersonalComponent,
     ClassComponent,
     OtherComponent,
-    ModalComponent
-    
+    ModalComponent,
   ],
   imports: [
     CommonModule,
     AppMaterialModule,
-    AppSharedModule
+    AppSharedModule,
+    FormsModule,
   ],
   exports: [
     HomeComponent,
